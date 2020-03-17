@@ -12,7 +12,7 @@ import dagger.Provides;
  * which we can't change (ie add Inject at the beginning)
  */
 @Module
-public class WheelsModule {
+public abstract class WheelsModule {
 
     @Provides
     static Rims provideRims() {
