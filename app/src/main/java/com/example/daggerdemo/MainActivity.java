@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
         //After settings Injections and Components, make project
         //Dagger create the DaggerXYZComponent
         CarComponent component = DaggerCarComponent.builder()
-                .dieselEngineModule(new DieselEngineModule(100))
+                .horsePower(100)
+                .engineCapacity(1400)
                 .build();
 
         component.inject(this);
